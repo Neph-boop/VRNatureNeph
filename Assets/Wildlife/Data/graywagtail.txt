@@ -1,0 +1,6 @@
+uID: MB1
+scientificName: Motacilla cinerea
+speciesName: Gray Wagtail
+speciesCategory: Migratory Bird
+hintDescription: You can spot it patrolling near body of water
+LongDescription: Gray wagtails are unmistakable with their gray head and back, yellow rump and belly, and white throat. And their characteristic movement of their tail bobbing up and down. Locally called Iwas-iwad or Payug-yug, they are often seen near water bodies where they patrol and hunt for insects, snails, and tadpoles. 

@@ -1,0 +1,6 @@
+uID: RB4
+scientificName: Acridotheres cristatellus
+speciesName: Crested Myna
+speciesCategory: Resident Bird
+hintDescription: Easily spot it with its dark plumage, white bill, and piercing orange eyes
+LongDescription: Crested Mynas are locally called Martines. They can easily be spotted with their dark plumage, white bill, piercing orange eyes, and matching yellow legs and feet. They are charming birds with a variety of calls, and can even mimic others’ songs.

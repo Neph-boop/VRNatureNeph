@@ -1,0 +1,7 @@
+uID: MB3
+scientificName: Egretta garzetta
+speciesName: Little Egret
+speciesCategory: Migratory Bird
+hintDescription: Its snowy white feathers, elegant neck, black beak, and long black legs makes it definitely a beauty!
+LongDescription: They are a beautiful egret with snowy white plume. Distinguished from other egrets with their thin black bill, and black legs with yellow feet. They are a wetland bird. In urban areas, they may be seen in canals and small ponds. Their unusual way of catching their prey involves stirring up shallow water using its feet to disturb any fish or small invertebrates which it catches quickly with its long spear-like beak.
+

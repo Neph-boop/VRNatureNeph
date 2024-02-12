@@ -1,0 +1,6 @@
+uID: NT0
+scientificName: Cynometra ramiflora
+speciesName: Balitbitan
+speciesCategory: Native Tree
+hintDescription: has small white flowers and leaves colors range from cream to light green to a very delicate pink
+longDescription: The Balitbitan is an evergreen tree, native to the Philippines and other tropical areas. Though its fruits are not edible, the balitbitan's ornamental attributes make it perfect for planting on roadsides and for shade. The tree itself has a slow growth for the first few years but grows into a small to medium-sized tree with a full canopy.

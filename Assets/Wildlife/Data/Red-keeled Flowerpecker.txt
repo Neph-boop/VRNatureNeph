@@ -1,0 +1,6 @@
+uID: RB1
+scientificName: Dicaeum australe
+speciesName: Red-keeled Flowerpecker
+speciesCategory: Resident Bird
+hintDescription: Look up and spot the small bird with a red stripe down the middle of their breast
+LongDescription: Red-keeled Flowerpecker, locally known as tiptip, tamsi, or pipit,is endemic to the Philippines. It is one of the smallest birds you might spot on campus. They have a blue-black back and white underpants accentuated by a bright red stripe down the middle of their breast.

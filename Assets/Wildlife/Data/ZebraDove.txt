@@ -1,0 +1,6 @@
+uID: MB0
+scientificName: Geopelia striata
+speciesName: Zebra Dove
+speciesCategory: Resident Bird
+hintDescription: Peel your eyes out for gray feathers, powder blue faces, and pink feet that blends in well with the rocks
+longDescription: Zebra doves, locally known as bato-bato, are one of the most common birds you can find on campus. They are quite well adapted to urban life. You can catch a glimpse of them in parking lots and fields, just open your eyes wide out ‘cause they blend in well with the rocks with their predominantly gray feathers and striped pattern.

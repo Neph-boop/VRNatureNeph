@@ -1,0 +1,6 @@
+uID: RB3
+scientificName: Lanius schach 
+speciesName: Long-tailed Shrike
+speciesCategory: Resident Bird
+hintDescription: Living up to its name, it has a long black tail
+LongDescription: Long-tailed shrike, locally called tarat or mamumugot, is a beautiful resident bird with a  black head, gray mantle, orange-y lower parts, and a long black tail. Like its migrant relative, the brown shrike, it is aggressive and predatory. It perches out in the open scanning for insects and small animals like lizards.

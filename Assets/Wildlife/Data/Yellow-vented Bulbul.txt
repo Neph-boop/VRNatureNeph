@@ -1,0 +1,6 @@
+uID: RB2
+scientificName: Pycnonotus goiavier
+speciesName: Yellow-vented Bulbul
+speciesCategory: Resident Bird
+hintDescription: Black-eyed, brown-winged, with yellow undertail!
+LongDescription: Yellow-vented Bulbuls are native to Southeast Asia and are probably the second most common birds in urban Metro Manila. “Bulbul” comes from the Persian or Arabic word for nightingale. Locally, they are known as Kulkul or Luklak. They enjoy eating fruits. They can easily be spotted by their white face, black eyes, brown wings, and yellow undertail.

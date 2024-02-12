@@ -1,0 +1,6 @@
+uID: B0
+scientificName: Mockupus birdous
+speciesName: MockUp Bird
+speciesCategory: Avian
+hintDescription: This brown bird does not fly and just stays in one spot!
+longDescription: Having being made by a computer science student who primarily codes, his design is very lacking. This can easily be seen by the amateur modeling work done by said comp sci student.
