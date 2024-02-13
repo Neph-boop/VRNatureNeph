@@ -21765,12 +21765,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
         type: 3}
+      propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
+        type: 3}
       propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 379851210}
     - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
         type: 3}
+      propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1191389931}
+    - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
+        type: 3}
       propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
+        type: 3}
+      propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
@@ -21780,12 +21795,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
         type: 3}
+      propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ShowImages
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
+        type: 3}
       propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: AudioCamScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
         type: 3}
+      propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: GalleryHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
+        type: 3}
       propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542301094353647630, guid: 74cab98345ecc954f9de3e0d1831e9b1,
+        type: 3}
+      propertyPath: takePictureTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1676418940695985024, guid: 74cab98345ecc954f9de3e0d1831e9b1,

@@ -66,6 +66,8 @@ public class LensCamScript : MonoBehaviour
         fileCounter++;
         if (fileCounter > GalleryHandlerRef.ImageListCount)
             fileCounter = 1;
+
+        GalleryHandlerRef.ShowImages();
         //Debug.Log("CLICK!");
     }
 
