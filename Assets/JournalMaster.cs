@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class JournalMaster : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class JournalMaster : MonoBehaviour
      * 2 = Gallery
      * 3 = Settings
      */
+
+    public UnityEvent<int> OnSwitchState;
 
     private void Start()
     {
@@ -61,12 +64,15 @@ public class JournalMaster : MonoBehaviour
         }
         else if (currentJournalState == 2)
         {
-
+            journalTabs[4].SetActive(true);
+            journalTabs[5].SetActive(true);
         }
         else if (currentJournalState == 3)
         {
 
         }
+
+        OnSwitchState?.Invoke(state);
     }
 
     private void turnOffTabs()
