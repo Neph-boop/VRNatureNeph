@@ -69,7 +69,7 @@ public class JournalMaster : MonoBehaviour
         }
         else if (currentJournalState == 3)
         {
-
+            journalTabs[6].SetActive(true);
         }
 
         OnSwitchState?.Invoke(state);
