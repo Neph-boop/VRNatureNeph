@@ -100,7 +100,7 @@ public class LeftHandPointer : MonoBehaviour
     public void TurnOnPointer()
     {
         isPointer = true;
-        //line.enabled = true;
+        line.enabled = true;
 
     }
     public void TurnOffPointer()
