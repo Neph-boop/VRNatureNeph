@@ -42,6 +42,7 @@ public class StanceHandler : MonoBehaviour
 
     public void OnCrouchButtonPressed()
     {
+        Debug.Log("BUTTON PRESSING TO CROUCH");
         if (!_isButtonActivated)
             return;
 

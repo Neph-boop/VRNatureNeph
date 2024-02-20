@@ -56,12 +56,6 @@ public class MyLeftController : MonoBehaviour
     public void DebugPrimaryPRESS(){
         Debug.Log("Primary Button Pressed");
     }
-    public void DebugPrimaryHOLD(){
-        Debug.Log("Primary Button Hoooold");
-    }
-    public void DebugSecondary(){
-        Debug.Log("Secondary Button Pressed");
-    }
 
     void Update()
     {
