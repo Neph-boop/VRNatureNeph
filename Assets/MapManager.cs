@@ -46,9 +46,9 @@ public class MapManager : MonoBehaviour
         }
         */
 
-        if (currentMap == 0)
+        if (currentMap == 1)
         {
-            nextMap = 1;
+            nextMap = 2;
             Debug.Log(nextMap);
             changeMap(nextMap);
             activateScene(nextMap);
@@ -153,13 +153,13 @@ public class MapManager : MonoBehaviour
         GonzagaFloor.SetActive(false);
         LowerEastFloor.SetActive(false);
 
-        if (sceneIndex == 1) //Gonzaga
+        if (sceneIndex == 2) //Gonzaga
         {
             Debug.Log("activateScene");
             gonzagaWildlifeActivator.activateMe();
             GonzagaFloor.SetActive(true);
         }
-        if (sceneIndex == 2)
+        if (sceneIndex == 3)
         {
             Debug.Log("activateScene");
             lowereastWildlifeActivator.activateMe();
