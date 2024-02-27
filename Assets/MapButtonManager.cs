@@ -44,7 +44,7 @@ public class MapButtonManager : MonoBehaviour
     {
         if (activeBtn != null)
         {
-            mapManager.goToScene(activeBtn.getSceneIndex());
+            mapManager.goToScene(activeBtn.getSceneIndex(), activeBtn.getWeatherCondition());
         }
     }
 
@@ -53,6 +53,11 @@ public class MapButtonManager : MonoBehaviour
         return activeBtn.getSceneIndex();
     }
 
+    public void SetActiveButton(MapButton button)
+    {
+        activeBtn = button;
+        attemptSelectScene();
+    }
 
 
 }

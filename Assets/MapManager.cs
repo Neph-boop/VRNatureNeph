@@ -8,6 +8,12 @@ using UnityEngine.SceneManagement;
 
 public class MapManager : MonoBehaviour
 {
+    public enum WeatherCondition
+    {
+        MORNING = 0,
+        AFTERNOON = 1,
+    }
+
     [SerializeField] faderScript fader;
 
     [SerializeField] int currentMap = 0;
@@ -24,6 +30,9 @@ public class MapManager : MonoBehaviour
 
     [SerializeField] resetStartingPoint rSP;
 
+    private WeatherCondition currentWeather;
+    [SerializeField] GameObject morningLight;
+    [SerializeField] GameObject afternoonLight;
     //List<AsyncOperation> scenesToLoad = new List<AsyncOperation>();
     //List<string> loadedScenes = new List<string>();
     //List<string> scenesTobeLoaded = new List<string>();
@@ -33,6 +42,12 @@ public class MapManager : MonoBehaviour
         //scenesTobeLoaded.Add("Main VR Scene");
         //scenesToLoad.Add(SceneManager.LoadSceneAsync("Main VR Scene"));
         //scenesToLoad.Add(SceneManager.LoadSceneAsync("VR GonzagaParking", LoadSceneMode.Additive));
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     // Update is called once per frame
@@ -123,12 +138,13 @@ public class MapManager : MonoBehaviour
     }
 
 
-    public void goToScene(int sceneIndex)
+    public void goToScene(int sceneIndex, WeatherCondition weather = WeatherCondition.MORNING)
     {
         startFade();
         mapchangeBool = false;
         waitingforPermission = true;
         nextMap = sceneIndex;
+        currentWeather = weather;
     }
     /*
     public void GoToScene(int sceneIndex)
@@ -166,4 +182,20 @@ public class MapManager : MonoBehaviour
             LowerEastFloor.SetActive(true);
         }
     }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode sceneMode)
+    {
+        if (currentWeather == WeatherCondition.MORNING)
+        {
+            morningLight.SetActive(true);
+            afternoonLight.SetActive(false);
+        }
+        else
+        {
+            morningLight.SetActive(false);
+            afternoonLight.SetActive(true);
+        }
+    }
+
+  
 }

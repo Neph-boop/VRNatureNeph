@@ -6,6 +6,7 @@ public class MapButton : MonoBehaviour
 {
     [SerializeField] private int mySceneIndex;
     [SerializeField] private string mySceneName;
+    [SerializeField] private MapManager.WeatherCondition weatherCondition;
     
     public int getSceneIndex()
     {
@@ -14,5 +15,10 @@ public class MapButton : MonoBehaviour
     public string getSceneName()
     {
         return mySceneName;
+    }
+
+    public MapManager.WeatherCondition getWeatherCondition() 
+    {
+        return weatherCondition;
     }
 }
