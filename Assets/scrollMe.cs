@@ -21,11 +21,12 @@ public class scrollMe : MonoBehaviour
 
     public void scrollUp()
     {
-        rTransform.position = new Vector3(rTransform.position.x, rTransform.position.y + speed * Time.deltaTime, rTransform.position.z);
+        //rTransform.position = new Vector3(rTransform.position.x, rTransform.position.y + speed * Time.deltaTime, rTransform.position.z);
+        rTransform.anchoredPosition = new Vector2(rTransform.anchoredPosition.x, rTransform.anchoredPosition.y + speed * Time.deltaTime);
     }
     public void scrollDown()
     {
-        rTransform.position = new Vector3(rTransform.position.x, rTransform.position.y - speed * Time.deltaTime, rTransform.position.z);
-
+        //rTransform.position = new Vector3(rTransform.position.x, rTransform.position.y - speed * Time.deltaTime, rTransform.position.z);
+        rTransform.anchoredPosition = new Vector2(rTransform.anchoredPosition.x, rTransform.anchoredPosition.y - speed * Time.deltaTime);
     }
 }

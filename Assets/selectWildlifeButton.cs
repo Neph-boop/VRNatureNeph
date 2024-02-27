@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class selectWildlifeProg : MonoBehaviour
 {
@@ -27,7 +28,10 @@ public class selectWildlifeProg : MonoBehaviour
     [SerializeField] bool unlocked = false;
 
     [SerializeField] TextMeshPro label;
-    [SerializeField] TextMeshPro prog;
+    //[SerializeField] TextMeshPro prog;
+    [SerializeField] Image progessImage;
+    [SerializeField] Sprite lockSprite;
+    [SerializeField] Sprite unlockSprite;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +45,8 @@ public class selectWildlifeProg : MonoBehaviour
         uID = wData.getUID();
         textName = wData.getSpeciesName();
         label.SetText(textName);
-        prog.SetText("0");
+        //prog.SetText("0");
+        progessImage.sprite = lockSprite;
         wDataOut = wData;
 
         audioProgScript = this.transform.parent.GetComponent<AudioProgScript>();
@@ -63,12 +68,13 @@ public class selectWildlifeProg : MonoBehaviour
         if (!unlocked)
         {
             expProgress += progress;
-            prog.SetText(expProgress.ToString());
+            //prog.SetText(expProgress.ToString());
             if (expProgress > expMax)
             {
                 unlocked = true;
                 //Debug.Log( textName + " Unlocked!!!");
-                prog.SetText("Unlocked!");
+                //prog.SetText("Unlocked!");
+                progessImage.sprite = unlockSprite;
                 audioProgScript.PlayEquipClip();
                 wDataOut = wData;
             }
