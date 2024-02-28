@@ -22,6 +22,8 @@ public class WildlifePlayerDetection : MonoBehaviour
 
     [SerializeField] float reappearTimer;
     [SerializeField] float reappearTimeMax;
+
+    private StanceHandler playerStanceHandler;
     //private bool vanished;
 
     // Start is called before the first frame update
@@ -32,6 +34,7 @@ public class WildlifePlayerDetection : MonoBehaviour
         appearanceStatus = true;
         myObj = this.gameObject;
         playerObj = this.GetComponentInParent<ProvidePlayer>().getPlayer();
+        playerStanceHandler = playerObj.GetComponent<StanceHandler>();
         wildlifeManager = this.GetComponentInParent<WildlifeManager>();
         isInCameraViewComponent = this.GetComponent<isInCameraView>();
         particleSys = GetComponent<ParticleSystem>();
@@ -43,7 +46,8 @@ public class WildlifePlayerDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isPlayerCrouching)
+        //if (!isPlayerCrouching)
+        if(!playerStanceHandler.GetCrouchStatus())
         {
             if (checkPlayerDist())
             {

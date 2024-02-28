@@ -56,4 +56,9 @@ public class StanceHandler : MonoBehaviour
     {
         _isButtonActivated = isEnable;
     }
+
+    public bool GetCrouchStatus()
+    {
+        return _isCrouching;
+    }
 }
