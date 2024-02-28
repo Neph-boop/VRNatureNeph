@@ -65,6 +65,7 @@ public class selectWildlifeProg : MonoBehaviour
     }
     public void addProgress(float progress)
     {
+        Debug.Log("PROGRESS: " + progress);
         if (!unlocked)
         {
             expProgress += progress;

@@ -22,6 +22,12 @@ public class MapManager : MonoBehaviour
     [SerializeField] bool mapchangeBool = false;
     [SerializeField] bool waitingforPermission = false;
 
+    [SerializeField]
+    private CameraMaster cameraMaster;
+
+    [SerializeField] wildlifeActivator tutorialWildlifeActivator;
+    [SerializeField] GameObject TutorialFloor;
+
     [SerializeField] wildlifeActivator gonzagaWildlifeActivator;
     [SerializeField] GameObject GonzagaFloor;
 
@@ -63,7 +69,10 @@ public class MapManager : MonoBehaviour
 
         if (currentMap == 1)
         {
-            nextMap = 2;
+            if (GameData.Is_Tutorial)
+                nextMap = 4;
+            else
+                nextMap = 2;
             Debug.Log(nextMap);
             changeMap(nextMap);
             activateScene(nextMap);
@@ -163,23 +172,34 @@ public class MapManager : MonoBehaviour
     */
     private void activateScene(int sceneIndex)
     {
+        tutorialWildlifeActivator.deactivateMe();
         gonzagaWildlifeActivator.deactivateMe();
         lowereastWildlifeActivator.deactivateMe();
 
         GonzagaFloor.SetActive(false);
         LowerEastFloor.SetActive(false);
+        TutorialFloor.SetActive(false);
 
         if (sceneIndex == 2) //Gonzaga
         {
             Debug.Log("activateScene");
             gonzagaWildlifeActivator.activateMe();
             GonzagaFloor.SetActive(true);
+            cameraMaster.SetWildlifeManager(gonzagaWildlifeActivator.GetComponentInChildren<WildlifeManager>());
         }
         if (sceneIndex == 3)
         {
             Debug.Log("activateScene");
             lowereastWildlifeActivator.activateMe();
             LowerEastFloor.SetActive(true);
+            cameraMaster.SetWildlifeManager(lowereastWildlifeActivator.GetComponentInChildren<WildlifeManager>());
+        }
+        if (sceneIndex == 4)
+        {
+            Debug.Log("activateScene");
+            tutorialWildlifeActivator.activateMe();
+            TutorialFloor.SetActive(true);
+            cameraMaster.SetWildlifeManager(tutorialWildlifeActivator.GetComponentInChildren<WildlifeManager>());
         }
     }
 

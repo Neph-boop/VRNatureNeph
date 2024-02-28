@@ -49,4 +49,9 @@ public class CameraMaster : MonoBehaviour
         //Zoom
         zoomToggleTrigger.Invoke();
     }
+
+    public void SetWildlifeManager(WildlifeManager wildlife)
+    { 
+        wildlifeManager = wildlife;
+    }
 }

@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WildlifeButtonManager : MonoBehaviour
 {
     public selectWildlifeProg[] ButtonList;
     //public List<selectWildlifeProg> ButtonList2;
     private int ButtonListSize;
+
+    public UnityEvent OnBirdPictured;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,7 @@ public class WildlifeButtonManager : MonoBehaviour
             if (ButtonList[i].getName() == uID)
             {
                 ButtonList[i].addProgress(score);
+                OnBirdPictured?.Invoke();
             }
         }
         /*

@@ -13,12 +13,22 @@ public class MapButtonManager : MonoBehaviour
     [SerializeField] private MapButton activeBtn;
 
     [SerializeField] private MapManager mapManager;
+
+    [SerializeField]
+    List<GameObject> mapBlockerUiList;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Init(); 
     }
 
+    void Init()
+    {
+        if (GameData.Is_Tutorial)
+        {
+            mapBlockerUiList.ForEach(x => x.SetActive(true));
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -42,6 +52,8 @@ public class MapButtonManager : MonoBehaviour
 
     public void attemptSelectScene()
     {
+        if (GameData.Is_Tutorial)
+            return;
         if (activeBtn != null)
         {
             mapManager.goToScene(activeBtn.getSceneIndex(), activeBtn.getWeatherCondition());

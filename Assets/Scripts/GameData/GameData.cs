@@ -5,6 +5,8 @@ public class GameData
 
     public const string IMAGE_COUNTER_SAVE_NAME = "ImageCounter";
 
+    public static bool Is_Tutorial = false;
+
     public static void SaveInt(string name, int value)
     { 
         PlayerPrefs.SetInt(name, value);
