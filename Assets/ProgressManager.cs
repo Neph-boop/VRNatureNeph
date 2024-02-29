@@ -84,6 +84,11 @@ public class ProgressManager : MonoBehaviour
             progBPscript.updateBackPage(selectedButton.getWData(), selectedButton.getIfUnlocked());
         }
     }
+
+    public void SetSelectedButton(selectWildlifeProg button)
+    {
+        progBPscript.updateBackPage(button.getWData(), button.getIfUnlocked());
+    }
     
 
 }

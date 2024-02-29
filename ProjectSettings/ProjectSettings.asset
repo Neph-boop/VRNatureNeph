@@ -135,9 +135,8 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1.1
   preloadedAssets:
-  - {fileID: 472758419996677965, guid: 977c4b50ec7858b41bc4060be417d272, type: 2}
-  - {fileID: 11400000, guid: e113fcdf32b82194e9a4b613357a7d9c, type: 2}
-  - {fileID: 5559823792177087901, guid: 006f44329d36fa04abebabb808bfc844, type: 2}
+  - {fileID: 2797393469394609577, guid: 977c4b50ec7858b41bc4060be417d272, type: 2}
+  - {fileID: -444221290854801941, guid: 006f44329d36fa04abebabb808bfc844, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -810,6 +809,7 @@ PlayerSettings:
   platformArchitecture: {}
   scriptingBackend:
     Android: 1
+    Standalone: 1
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   managedStrippingLevel:

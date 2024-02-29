@@ -22,12 +22,17 @@ public class selectWildlifeProg : MonoBehaviour
     private Material nonSelectMat;
     private Material selectMat;
     private Material hoverMat;
+    private Color nonSelectColor;
+    private Color selectColor;
+    private Color hoverColor;
+
 
     [SerializeField] float expProgress;
     [SerializeField] float expMax;
     [SerializeField] bool unlocked = false;
 
-    [SerializeField] TextMeshPro label;
+    [SerializeField] Image backgroundImage;
+    [SerializeField] TextMeshProUGUI label;
     //[SerializeField] TextMeshPro prog;
     [SerializeField] Image progessImage;
     [SerializeField] Sprite lockSprite;
@@ -36,9 +41,15 @@ public class selectWildlifeProg : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(backgroundImage == null)
+            backgroundImage = GetComponent<Image>();
+
         nonSelectMat =  GetComponentInParent<selectMaterialData>().getNonSelectMaterial();
         selectMat    =  GetComponentInParent<selectMaterialData>().getSelectMaterial();
         hoverMat     =  GetComponentInParent<selectMaterialData>().gethoverMaterial();
+        nonSelectColor = GetComponentInParent<selectMaterialData>().getNonSelectColor();
+        selectColor = GetComponentInParent<selectMaterialData>().getSelectColor();
+        hoverColor = GetComponentInParent<selectMaterialData>().gethoverColor();
         state = 0;
         renderer = GetComponent<Renderer>();
         renderer.material = nonSelectMat;
@@ -50,6 +61,8 @@ public class selectWildlifeProg : MonoBehaviour
         wDataOut = wData;
 
         audioProgScript = this.transform.parent.GetComponent<AudioProgScript>();
+
+        deselectButton();
     }
 
     // Update is called once per frame
@@ -85,18 +98,21 @@ public class selectWildlifeProg : MonoBehaviour
     public void deselectButton()
     {
         state = 0;
-        renderer.material = nonSelectMat;
+        //renderer.material = nonSelectMat;
+        backgroundImage.color = nonSelectColor;
+
     }
     public void hoverOverButton()
     {
         state = 1;
-        renderer.material = hoverMat;
+        //renderer.material = hoverMat;
+        backgroundImage.color = hoverColor;
     }
     public void selectButton()
     {
         state = 2;
-        renderer.material = selectMat;
-        
+        //renderer.material = selectMat;
+        backgroundImage.color = selectColor;
     }
 
     public string getUID() { return uID; }

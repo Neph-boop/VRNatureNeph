@@ -51,14 +51,21 @@ public class TutorialManager : MonoBehaviour
             ToggleShowTutorialParent(true);
             LoadCurrentTutorial();
         }
+
     }
 
     public void ToggleShowTutorialParent(bool isEnable)
     {
-        _tutorialPillarParent.SetActive(isEnable);
+        if (!GameData.Is_Tutorial)
+            return;
+
+       _tutorialPillarParent.SetActive(isEnable);
     }
     private void LoadCurrentTutorial()
     {
+        if (!GameData.Is_Tutorial)
+            return;
+
         _tutorialPillars.ForEach(x => x.SetActive(false));
 
         if (_currentStage > TutorialStage.FINAL)
@@ -69,11 +76,16 @@ public class TutorialManager : MonoBehaviour
 
     private void SetNextTutorial()
     {
+        if (!GameData.Is_Tutorial)
+            return;
+
         _currentStage++;
     }
 
     private void OnEndLocomotion(LocomotionSystem system)
     {
+        if (!GameData.Is_Tutorial)
+            return;
         if (_currentStage == TutorialStage.TELEPORT)
         {
             SetNextTutorial();
@@ -85,6 +97,8 @@ public class TutorialManager : MonoBehaviour
 
     public void OnTakePicture()
     {
+        if (!GameData.Is_Tutorial)
+            return;
         if (_currentStage == TutorialStage.CAMERA)
         {
             SetNextTutorial();
@@ -96,6 +110,8 @@ public class TutorialManager : MonoBehaviour
 
     public void OnJournalExit()
     {
+        if (!GameData.Is_Tutorial)
+            return;
         if (_currentStage == TutorialStage.JOURNAL)
         {
             SetNextTutorial();
@@ -105,6 +121,8 @@ public class TutorialManager : MonoBehaviour
 
     public void OnBirdPictured()
     {
+        if (!GameData.Is_Tutorial)
+            return;
         if (_currentStage == TutorialStage.SNEAKING)
         {
             SetNextTutorial();
