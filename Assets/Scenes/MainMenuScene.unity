@@ -898,12 +898,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068906712}
   m_CullTransparentMesh: 1
---- !u!4 &1095238258 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9014170783728641054, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1400268122}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1143212882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,7 +1785,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455664349}
-  - component: {fileID: 1455664348}
   m_Layer: 0
   m_Name: MenuTransformParent
   m_TagString: Untagged
@@ -1799,20 +1792,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1455664348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455664347}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 354ea9cef6b82474c8fa47661be540d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cameraTransform: {fileID: 1095238258}
-  _targetTransform: {fileID: 1989715629}
 --- !u!4 &1455664349
 Transform:
   m_ObjectHideFlags: 0
